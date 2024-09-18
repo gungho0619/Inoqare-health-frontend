@@ -1,0 +1,45 @@
+.footerMenu {
+    li {
+        display: flex !important;
+        align-items: center;
+
+        svg {
+            height: 15px;
+            width: auto;
+        }
+    }
+}
+
+.footerWraper {
+    background-color: #2A2D58;
+    padding-top: 30px;
+    color: #e6e6e6;
+
+    .footerLogo {
+        max-width: 200px;
+        width: 100%;
+        display: block;
+    }
+
+    [class*="title"] {
+        color: #7DC1EC !important;
+    }
+
+    a, p {
+        color: #fff !important;
+    }
+
+    a {
+        font-size: 14px;
+
+        &:after {
+            background-color: #fff !important;
+        }
+    }
+
+    [class*="footer-menu"] {
+        svg {
+            color: #e6e6e6;
+        }
+    }
+}

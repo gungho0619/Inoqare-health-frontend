@@ -1,0 +1,36 @@
+// rem converter for font-size
+// ----------------------------------
+@function rem($pixels, $context: $baseFontSize) {
+    @if (unitless($pixels)){
+       $pixels: $pixels * 1px;
+   }
+   @if (unitless($context)) {
+       $context: $context * 1px;
+   }
+   @return $pixels / $context * 1rem;
+}
+
+// Media query
+// ----------------------------------
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+    $min: map-get($breakpoints, $name);
+    @return if($min !=0, $min, null);
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+    $min: breakpoint-min($name, $breakpoints);
+
+    @if $min {
+        @media (min-width: $min) {
+            @content;
+        }
+    }
+
+    @else {
+        @content;
+    }
+}
+
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+    @return if(breakpoint-min($name, $breakpoints)==null, "", "-#{$name}");
+}

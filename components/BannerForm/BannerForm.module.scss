@@ -1,0 +1,76 @@
+.mainWrapper {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media(max-width: 575px) {
+        padding-top: 30px;
+        padding-bottom: 00px;
+    }
+
+    .videoContainer {
+        background-color: #F3FBFE;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        width: 100%;
+
+        @media(min-width: 991px) {
+            width: 76%;
+        }
+
+        @media(min-width: 1300px) {
+            width: 75%;
+        }
+
+        @media(min-width: 1400px) {
+            width: 74%;
+        }
+
+        @media(min-width: 1700px) {
+            width: 68%;
+        }
+
+        video {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: 100%;
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            @media(min-width: 991px) {}
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .content {
+        .title {
+            font-size: 1.8rem;
+            color: #615f5f;
+            margin-bottom: 30px;
+        }
+
+        .subtitle {
+            color: #615f5f;
+            margin-bottom: 5px;
+        }
+
+        .gradientText {
+            background: -webkit-linear-gradient(#14b9c2, #0b97dd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+
+    }
+}

@@ -1,0 +1,137 @@
+.service-item.style1 .service-img {
+  border: none;
+  margin: 0;
+}
+.service-item .service-img img {
+  /*border: 1px solid gray;*/
+  /*border-radius: 50%;*/
+  max-height: 70px;
+}
+
+.service-partner-img {
+  max-height: none !important;
+}
+
+.service-item.style1 .service-info h4 {
+  font-size: 30px;
+}
+.service-item .service-info p {
+  color: gray;
+}
+.service-item .service-info a:hover {
+  color: #78d2ff;
+}
+.service-item .service-info .get-started:hover {
+  color: white;
+}
+.cbottom-10 {
+  bottom: 10px;
+}
+.cbottom-20 {
+  bottom: 20px;
+}
+.cbottom-30 {
+  bottom: 30px;
+}
+.cbottom-40 {
+  bottom: 40px;
+}
+.cbottom-50 {
+  bottom: 50px;
+}
+.tour-slider-v3-pagination .swiper-pagination-bullet:after {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .service-item .service-img {
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .service-item .service-img {
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .row .col-1-2 {
+    width: 100%;
+  }
+  .hero-wrap.style1 {
+    padding: 0px 0;
+  }
+  .row .col-1-2:nth-child(2n) {
+    padding-top: 0;
+  }
+  .hero__heading {
+    margin-top: 25%;
+    font-size: 1.5rem;
+  }
+  .hero-head {
+    margin-top: 0%;
+  }
+  .hero__subheading {
+    font-size: 1rem;
+  }
+  .hero__btn-block span {
+    font-size: 1rem;
+  }
+  .about-title-span {
+    margin-top: 45px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .row .col-1-2 {
+    width: 100%;
+    display: contents;
+  }
+  .row .col-1-2:nth-child(2n) * {
+    padding: 10px 0;
+    padding-left: 15%;
+  }
+  .row .col-1-2:nth-child(2n) .hero__btn-block * {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .row .col-1-2:nth-child(2n) * {
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .btn-who-we-are {
+    margin-bottom: 5px;
+  }
+  .row .col-1-2:nth-child(2n) * {
+    padding-left: 5px;
+  }
+}
+/*.s-login i{
+    font-size: 20px;
+    background: #345c96;
+    padding: 12px;
+    margin-top: -11px;
+    margin-left: -82px;
+    margin-right: 10px;
+  }
+  .s-login{
+    min-width: 300px;
+  }*/
+.g-fbbtn {
+  background-color: #4c69ba;
+  border: calc(0.06887vw + 0.67769px) solid #4c69ba;
+}
+.g-fbbtn i {
+  position: absolute;
+  margin-left: -47px;
+  margin-top: 0px;
+  font-size: 30px;
+}
+.g-glebtn i {
+  position: absolute;
+  margin-left: -52px;
+  margin-top: -2px;
+  font-size: 30px;
+}

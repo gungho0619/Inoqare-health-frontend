@@ -1,0 +1,374 @@
+/*-------------------------------
+         Footer CSS
+-------------------------------*/
+.footer-wrap {
+    position: relative;
+    border-top: 1px solid #f1f1f1;
+
+    .footer-top {
+
+        .footer-widget {
+            margin: 0 0 30px;
+
+            .footer-widget-title {
+                line-height: 1.4;
+                margin: 0 0 20px;
+                color: var(--clr_thunder);
+            }
+
+
+            .footer-menu {
+
+                li {
+                    padding-bottom: 10px;
+                    display: block;
+
+                    a {
+                        position: relative;
+                        color: var(--clr_scorpion);
+                        display: inline-block;
+                        text-transform: capitalize;
+                        transition:(0.4s);
+
+                        &:after {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 0;
+                            height: 1px;
+                            content: "";
+                            background-color: var(--clr_scorpion);
+                            visibility: hidden;
+                            opacity: 0;
+                            transition:(0.3s);
+
+                        }
+
+                        i {
+                            font-size: 14px;
+                            margin-right: 5px;
+                        }
+
+                        &:hover {
+                            color: var(--clr_thunder);
+
+                            &:after {
+                                width: 100%;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+
+            .payment-option {
+                margin: 30px 0 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                li {
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: 15px 0 15px;
+        border-top: 1px solid #f1ebe1;
+
+        .copyright-text {
+            p {
+                color: var(--clr_thunder);
+                margin: 0;
+
+                a {
+                    color: var(--clr_jaffa);
+                }
+            }
+        }
+
+        .footer-bottom-menu {
+            text-align: right;
+
+            li {
+                display: inline-block;
+                margin: 0 13px;
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    top: 5px;
+                    left: -15px;
+                    content: "";
+                    background: #fff;
+                    width: 2px;
+                    height: 15px;
+                    transform: skew(-18deg);
+                }
+
+                &:first-child {
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    color: var(--clr_white);
+                }
+            }
+        }
+    }
+
+    // &.style1 {
+
+    //     .footer-widget-title,
+    //     .footer-menu ul li a,
+    //     p {
+    //         color: var(--clr_white);
+    //     }
+
+    // }
+}
+
+/*-----------------------------
+    Newsletter CSS
+-----------------------------*/
+.newsletter-bg-1 {
+    background-image: url(/images/newsletter-bg.png);
+}
+
+.newsletter-wrap {
+    position: relative;
+
+    .dot-shape {
+        position: absolute;
+        top: 80%;
+        left: 40px;
+        z-index: 1;
+        height: 70%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+
+        &.style1,
+        &.style2,
+        &.style3 {
+            padding: 100px;
+        }
+    }
+
+    &.style1 {
+        .form-group {
+            input {
+                border-radius: 20px 0 0;
+            }
+
+            button {
+                border-radius: 0 0 20px;
+            }
+        }
+    }
+
+    &.style2 {
+        .newsletter-form {
+            h3 {
+                text-align: center;
+
+                span {
+                    font-size: 20px;
+                    line-height: 1.2;
+                    font-weight: 300;
+                    margin-bottom: 5px;
+                    display: block;
+                }
+                br {
+                    display: none;
+                }
+            }
+
+            p {
+                text-align: center;
+                margin: 0 0 15px;
+            }
+
+            .form-group {
+                input {
+                    border-radius: 50px;
+                }
+
+                .btn {
+                    border-radius: 50px;
+                }
+            }
+
+        }
+    }
+
+    &.style3 {
+        .newsletter-form {
+            p {
+                margin-bottom: 15px;
+            }
+            h3 {
+                br {
+                    display: none;
+                }
+            }
+            span {
+                font-size: 15px;
+                color: var(--clr_jaffa);
+                font-weight: 400;
+                position: relative;
+                margin-left: 28px;
+                margin-bottom: 10px;
+                display: block;
+
+                &:before {
+                    position: absolute;
+                    top: 10px;
+                    left: -30px;
+                    content: "";
+                    background-color: var(--clr_jaffa);
+                    width: 25px;
+                    height: 1px;
+                }
+            }
+        }
+    }
+}
+
+.newsletter.newsletter-bg-1 {
+    border-radius: 15px;
+}
+
+.newsletter-form {
+    background: var(--clr_white);
+    padding: 40px;
+
+
+    h3 {
+        font-size: 35px;
+        line-height: 1.1;
+        font-weight: 700;
+    }
+
+    p {
+        margin: 0 0 30px;
+    }
+
+    .form-group {
+        input {
+            width: 100%;
+            height: 60px;
+            padding: 10px 15px;
+            font-size: 15px;
+            background: transparent;
+            text-align: center;
+            border: 1px solid var(--clr_grey);
+        }
+
+    }
+
+}
+
+
+
+/*---------------------------
+    Responsive CSS
+--------------------------*/
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1360px) {
+    .newsletter-form h3 {
+        font-size: 42px;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .copyright-text {
+        text-align: right
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .newsletter-wrap {
+        padding: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .newsletter-form h3 {
+        font-size: 32px;
+    }
+
+    .newsletter-wrap {
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .social-profile {
+        text-align: center;
+    }
+
+    .copyright-text {
+        text-align: center;
+        margin: 10px 0 0;
+    }
+
+    .newsletter.container {
+        padding: 0;
+    }
+
+    .newsletter-wrap {
+        padding: 50px 15px;
+    }
+
+    .newsletter-wrap.style3 .newsletter-form {
+        padding: 20px 30px 30px;
+    }
+
+    .newsletter-form {
+        padding: 30px 0px 0;
+        text-align: center;
+        background-color: var(--clr_heath);
+    }
+
+    .newsletter-form h3 {
+        font-size: 30px;
+    }
+
+    .footer-wrap .footer-bottom {
+        padding: 20px 0 15px;
+    }
+
+
+}
+
+@media only screen and (max-width: 575px) {
+    .footer-widget {
+        text-align: left;
+    }
+}
+
+.curve-shape {
+    position: absolute;
+    bottom: 10%;
+    right: 40px;
+    height: 100%;
+}

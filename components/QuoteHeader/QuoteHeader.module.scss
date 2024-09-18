@@ -1,0 +1,19 @@
+.container {
+    max-width: 550px;
+}
+
+.wrapper {
+    background-color: #1a3147;
+    padding: 10px 0;
+}
+
+.map {
+    @media (max-width: 575px){
+        &[class*="nice-select"] {
+            margin-bottom: 0;
+            height: 30px;
+            line-height: 30px;
+            width: 130px;
+        }
+    }
+}

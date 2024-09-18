@@ -1,0 +1,8 @@
+.promoCard{
+    [class*="image"] {
+        min-height: 170px;
+    }
+    [class*="promo-item"] {
+        height: calc(100% - 150px);
+    }
+}

@@ -1,0 +1,131 @@
+.popupFormWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(#000, .6);
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+    .flexImage {
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#000, .4);
+            top: 0;
+            left: 0;
+        }
+    }
+    .content{
+        z-index: 2;
+        position: relative; 
+        img{
+            max-width: 200px;
+        }
+    }
+    
+    .popupForm{
+        max-width: 800px;
+        width: 100%;
+        padding: 0px;
+        background-color: #fff;
+        position: relative;
+
+        label {
+            font-size: 14px;
+        }
+
+        input {
+            height: 50px;
+            font-size: 14px;
+            padding-left: 15px;
+        }
+
+        .countrySelect{
+            [class*='-control'] {
+                padding-left: 0;
+            }
+            [class*='-placeholder'], input {
+                font-size: 14px;
+                padding-left: 15px;
+            }
+            [class*='-ValueContainer'], [class*='-Input'] {
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .closeBtn{
+            position: fixed;
+            right: 50px;
+            top: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            border: 0;
+            transition: .3s ease-in-out;
+            padding: 10px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 99;
+            &:hover{
+                background-color: rgba(#000, .3);
+            }
+            @media(max-width: 767px){
+                position: absolute;
+                right: 10px;
+                top: 8px;
+                width: 30px;
+                height: 30px;
+                padding: 5px;
+            }
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+}
+.popupButton{
+    border: none;
+    position: fixed;
+    z-index: 999;
+    background-color: #f8df74;
+    @media(min-width: 640px){
+        left: -45px;
+        top: 300px;
+        transform: rotate(-90deg);
+        padding: 5px 10px;
+    }
+    @media(max-width: 639px){
+        pad: 3px;
+        border-radius: 50px;
+        width: 34px;
+        height: 34px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        bottom: 100px;
+        right: 35px;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            width: 110px;
+        }
+    }
+    span{
+        padding-left: 6px;
+    }
+    img {
+        width: 24px;
+    }
+}

@@ -1,0 +1,61 @@
+@media (max-width: 575px) {
+    .about-feature-icon {
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+    .single-tour-info {
+        position: static !important;
+    }
+
+
+    .single-tour-item {
+        padding-top: 200px;
+        padding-bottom: 20px;
+    }
+
+    .tour-details-item {
+        padding-top: 230px !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+.recommend-tour-area {
+    svg {
+        width: 20px;
+        transform: translateX(-50%);
+    }
+}
+
+@media(max-width: 575px) {
+    .quote-header h2 {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .login-form .login-header {
+        padding: 10px 15px 5px 10px;
+    }
+    .quoteForm{
+        input,  .countrySelectWrapper [class*="placeholder"] {
+            font-size: 14px !important;
+            white-space: nowrap;
+        }
+    }
+    .login-form .login-body .btn{
+        padding: 10px 8px;
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+.quoteForm{
+    input {
+        font-size: 14px;
+    }
+    .countrySelectWrapper{
+        [class*="placeholder"] {
+            font-size: 16px;
+        }
+    }
+}
