@@ -1,8 +1,7 @@
 import React from "react";
 import Select from "react-select";
-import country_data from "../../data/country_code";
 
-export default function CountrySelect(props) {
+export default function TreatmentSelect(props) {
   const {
     value,
     handleChange,
@@ -11,12 +10,13 @@ export default function CountrySelect(props) {
     height = "60px",
     inputSx = {},
     placeholder = "Desired Country For Medication",
+    options,
   } = props;
 
   return (
     <Select
-      id="country_select"
-      instanceId="country_select"
+      id="treatment_select"
+      instanceId="treatment_select"
       value={value}
       onChange={handleChange}
       placeholder={placeholder}
@@ -39,7 +39,7 @@ export default function CountrySelect(props) {
         }),
         input: (styles) => ({ ...styles, ...inputSx }),
       }}
-      options={country_data}
+      options={options}
     />
   );
 }
