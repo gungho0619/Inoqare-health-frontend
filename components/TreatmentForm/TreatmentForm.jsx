@@ -91,8 +91,9 @@ const TreatmentForm = () => {
       if (value && value.length > 0) return;
     }
     router.push(
-      `/get-quote?treatment_info=${formData.treatment_info}&destination_country=${formData.destination_country.name}&email=${formData.email}`
+      `/get-quote?treatment_info=${formData.treatment_info.name}&destination_country=${formData.destination_country.name}&email=${formData.email}`
     );
+    console.log(`formData = `, formData);
   };
 
   if (isLoading) {
